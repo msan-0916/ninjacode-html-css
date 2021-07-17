@@ -62,12 +62,22 @@ h2{
     /* border: 1px solid red; */
 }
 
-
-@media screen and (min-width:1199px) {
 .logo img{
-    width:  70%;
-    padding-left: 100px;
+    max-width: 90%;
+    height: auto;
 }
+
+.page404-logo img{
+    max-width: 40%;
+}
+
+.logo404{
+    text-align: center;
+}
+
+.logo404 img{
+    max-width: 40%;
+    height: auto;
 }
 
 @media screen and (max-width:1200px) {
@@ -75,9 +85,6 @@ h2{
         padding: 10px;
         width:80%;
         margin-top: 30px;
-    }
-    .logo img{
-        width: 100%;
     }
 }
 
@@ -96,10 +103,6 @@ h2{
     h2{
         margin-top: 35px;
         font-size: 18px;
-    }
-
-    .logo img{
-        width: 100%;
     }
 }
 
@@ -300,12 +303,19 @@ input[name="sample"]::placeholder{
 
 /* ------------------- pagenavi ------------------- */
 .nav-links{
-    margin-top: 100px;
+    margin-top: 30px;
     padding:2em;
     display:flex;
     justify-content:center;
     background:#f3f3f3;
 }
+
+@media screen and (max-width:1200px) {
+    .nav-links{
+        margin-top: 0px;
+    }
+}
+
 .nav-links a,span{
     width:50px;
     height:50px;
