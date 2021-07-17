@@ -2,16 +2,14 @@
     <head>
         <meta charset="utf-8">
         <title>ninjacode_html_css</title>
-        <!-- <link rel="stylesheet" href="https://msan-0916.github.io/ninjacode-practice/destyle.css"/> -->
-        <link rel="stylesheet" href="https://msan-0916.github.io/ninjacode-practice/style2.css"/>
-
+        <link rel="stylesheet" href="https://msan-0916.github.io/ninjacode-html-css/style.css"/>
     </head>
-    <body>
+    <body class="fadeout">
         <div id="container">
-            <div class="logo"><img src="https://github.com/msan-0916/ninjacode-practice/blob/main/just-do-it.png?raw=true" alt=""></div>
+        <div class="logo"><img src="https://github.com/msan-0916/ninjacode-html-css/blob/main/just-do-it.png?raw=true" alt=""></div>
             <div><h1>忍者CODE　HTML&CSS練習</h1></div>
             <h2>リンクの色変更、下線削除</h2>
-            <div><a href="#">リンク先に飛ばすよ</a></div>
+            <div><a href="https://google.com">リンク先に飛ばすよ</a></div>
             <h2>文字の透過、ポインターの変更</h2>
             <div><span>spanタグが透過します。</span></div>
             <h2>影をつける</h2>
@@ -20,7 +18,7 @@
             <h2>ドットの下線</h2>
             <p class="dotted">テキストにドットのボーダーをつけます。</p>
             <h2>プレイスホルダーの編集</h2>
-            <div>
+            <div class="lesson5">
                 <textarea placeholder="テキストテキスト" cols="30" rows="10"></textarea>
                 <input placeholder="テキストテキスト" type="text">
                 <textarea class="resize" placeholder="テキストテキスト" cols="30" rows="10"></textarea>
@@ -29,6 +27,81 @@
                 <div class="p-center">
                     <p>ど真ん中</p>
                 </div>
-        </div>
+                <h2>要素の色変更</h2>
+                <section>
+                    <div class="cat-red">この文字を赤にしてください</div>
+                    <p id="catBlue">この文字を青色にしてください</p>
+                    <input placeholder="プレイスホルダーを緑に指定" name="green" type="text" style="width: 200px;">
+                    <div data-text="target">この文字をピンクにしてください</div>
+                    <div class="color-change style-none">
+                        <ul style="margin-top: 15px;">
+                            <li>リストの最初の文字(赤色)</li>
+                            <li>サンプルテキスト</li>
+                            <li>サンプルテキスト</li>
+                            <li>サンプルテキスト</li>
+                            <li>リストの5番目(緑色)</li>
+                            <li>サンプルテキスト</li>
+                            <li>サンプルテキスト</li>
+                            <li>リストの最後の文字(青色)</li>
+                        </ul>
+                    </div>
+                    <div class="color-change2 style-none">
+                        <ul style="margin-top: 15px;">
+                            <li>リストの1番目</li>
+                            <li>リストの2番目</li>
+                            <li>リストの3番目</li>
+                            <li>リストの4番目</li>
+                            <li>リストの5番目</li>
+                            <li>リストの6番目</li>
+                            <li>リストの7番目</li>
+                        </ul>
+                    </div>
+                </section>
+                <h2>before・afterの使い方</h2>
+            <div class="lesson8">
+                <p class="before-cat">手前に逆三角を付与します</p>
+                <h3 style="margin-top: 32px;">両端に横棒を付与します</h3>
+            </div>
+            <h2>表の作成</h2>
+            <section class="lesson9">
+                <dl>
+                    <dt>屋号</dt>
+                    <dd>忍者CODE</dd>
+
+                    <dt>住所</dt>
+                    <dd>滋賀県甲賀市甲賀の里</dd>
+
+                    <dt>資本金</dt>
+                    <dd>100円</dd>
+
+                    <dt>事業</dt>
+                    <dd>
+                        <ul>
+                            <li>手裏剣を使用して悪を討つ</li>
+                            <li>剣術の練習をして果物切る</li>
+                            <li>影分身の術を使用して2人分のバイト代を受給</li>
+                            <li>火遁の術でキャンプファイヤー</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </section>
+            <h2>インデント</h2>
+            <div class="text-wrap">
+                <p>1,テキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>2,abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</p>
+            </div>
+<!----- pagenavi始まり ----->
+            <div class="nav-links">
+                <span class="page-numbers current">1</span><!-- 現在閲覧しているページ(1ページ) -->
+                <a class="page-numbers" href="https://msan-0916.github.io/ninjacode-html-css/page2.html">2</a><!-- 1ページ目へのリンク -->
+                <a class="page-numbers" href="#">3</a><!-- 3ページ目へのリンク -->
+                <span class="page-numbers dots">…</span><!-- ...の部分 -->
+                <a class="page-numbers" href="#">●</a><!-- 27ページ目(最後のページ)へのリンク -->
+                <a class="next page-numbers" href="#">»</a><!-- 現在の次のページへのリンク -->
+            </div>
+<!----- pagenavi終わり ----->
+        </div><!-- container終わり -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://msan-0916.github.io/ninjacode-html-css/javascript.js"></script>
     </body>
 </html>
